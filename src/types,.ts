@@ -38,8 +38,8 @@ export const paymentFormSchema = z.object({
   cardHolder: z.string().min(1, "Card holder is required"),
   cardNumber: z
     .string()
-    .min(16, "Card number is required")
-    .max(16, "Card number is required"),
+    .min(16, "Card number must be 16 digits")
+    .max(16, "Card number must be 16 digits"),
   expDate: z
     .string()
     .regex(/^(0[1-9]|1[0-2])\/\d{2}$/, "Invalid expiration date"),
