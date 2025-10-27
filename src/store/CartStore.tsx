@@ -33,12 +33,8 @@ const useCartStore = create<CartStoreStateType & CarStoreActionsType>()(
             ],
           };
         }),
-      removeFromCart: (product: {
-        selectedColor: any;
-        selectedSize: any;
-        id: string | number;
-      }) =>
-        set((state: { cart: any[] }) => ({
+      removeFromCart: (product) =>
+        set((state) => ({
           cart: state.cart.filter(
             (p) =>
               !(
