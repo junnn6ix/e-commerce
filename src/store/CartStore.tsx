@@ -8,9 +8,9 @@ const useCartStore = create<CartStoreStateType & CarStoreActionsType>()(
       cart: [],
       hasHydrated: false,
       addToCart: (product: CartItemType) =>
-        set((state: { cart: any }) => {
+        set((state) => {
           const existingIndex: number = state.cart.findIndex(
-            (p: any) =>
+            (p) =>
               p.id === product.id &&
               p.selectedSize === product.selectedSize &&
               p.selectedColor === product.selectedColor
