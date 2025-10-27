@@ -1,4 +1,4 @@
-import { ProductsType } from "@/types,";
+import { ProductsType } from "@/types";
 import Categories from "./Categories";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
