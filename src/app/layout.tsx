@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TRENDLAMA.",
+  title: "neck.",
   description: "Everything you looking for in one place.",
 };
 
